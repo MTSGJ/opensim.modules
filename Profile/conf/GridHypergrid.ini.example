@@ -1,0 +1,5 @@
+;Add the following to your own config-include/GridHypergrid.ini file to make the UserProfile service working
+
+[Profile]
+    Module = "OpenSimProfileModule"
+

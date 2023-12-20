@@ -1,0 +1,8 @@
+;Add the following to your own OpenSim.ini file to make the UserProfile service working
+
+[Profile]
+    Module = "OpenSimProfileModule"
+
+    ; Change it to your own HTTP server to have the Profile server work
+    ProfileURI = "YOUR_HELPER_URL/profile.php"
+

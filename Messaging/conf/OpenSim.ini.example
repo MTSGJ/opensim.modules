@@ -1,0 +1,5 @@
+;Add the following to your own OpenSim.ini file to make the UserProfile service working
+
+[Messaging]
+    MuteListModule = NSLMuteListModule
+

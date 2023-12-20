@@ -1,0 +1,5 @@
+; Add the following to your own config-include/Hypergrid file to make Search work:
+
+[Modules]
+    SearchModule            = "OpenSimSearchModule"
+

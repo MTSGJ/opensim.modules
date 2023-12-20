@@ -1,0 +1,5 @@
+
+[Wind]
+    enabled = true
+    wind_plugin = SimpleFluidSolverWind
+

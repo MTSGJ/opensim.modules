@@ -1,0 +1,28 @@
+<?php
+
+// default
+$MESSAGE_DB_HOST   = OPENSIM_DB_HOST;
+$MESSAGE_DB_NAME   = OPENSIM_DB_NAME;
+$MESSAGE_DB_USER   = OPENSIM_DB_USER;
+$MESSAGE_DB_PASS   = OPENSIM_DB_PASS;
+$MESSAGE_DB_MYSQLI = OPENSIM_DB_MYSQLI;
+
+if (MESSAGE_DB=='HELPER' and defined('HELPER_DB_NAME')) {
+    $MESSAGE_DB_HOST   = HELPER_DB_HOST;
+    $MESSAGE_DB_NAME   = HELPER_DB_NAME;
+    $MESSAGE_DB_USER   = HELPER_DB_USER;
+    $MESSAGE_DB_PASS   = HELPER_DB_PASS;
+    $MESSAGE_DB_MYSQLI = HELPER_DB_MYSQLI;
+}
+
+
+// Table Base Name
+if (MESSAGE_DB=='HELPER' or MESSAGE_DB=='OPENSIM') {
+    define('MUTE_LIST_TBL_BASE',       'mute_list');
+    define('OFFLINE_MESSAGE_TBL_BASE', 'offline_message');
+}
+else {  // NONE 
+    define('MUTE_LIST_TBL_BASE',       '');
+    define('OFFLINE_MESSAGE_TBL_BASE', 'im_offline');
+}
+
