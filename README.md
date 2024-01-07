@@ -12,8 +12,8 @@
 
 ## Profile
 - OpenSimProfile
-  - for devel: https://polaris.star-dust.jp/pukiwiki/?OpenSim/osprofile
-
+  - for devel: https://polaris.star-dust.jp/pukiwiki/?OpenSim/ossearch
+  
 ## Search
 - OpenSimSearch
   - for devel: https://polaris.star-dust.jp/pukiwiki/?OpenSim/ossearch
