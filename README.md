@@ -16,6 +16,6 @@
 - OpenSimSearch (OpenSearch)
 
 ## Wind
-- SFS_Wind
+- SFS_Wind (SimpleFluidSolverWind)
   - https://polaris.star-dust.jp/pukiwiki/?OpenSim/Wind
   
