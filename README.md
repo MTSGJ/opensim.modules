@@ -3,6 +3,7 @@
 
 ## Messaging
 - MuteList
+  - for devel: https://polaris.star-dust.jp/pukiwiki/?OpenSim/MuteList
 
 ## Migration
 - LocalMigration
@@ -11,11 +12,11 @@
 
 ## Profile
 - OpenSimProfile
-  - https://polaris.star-dust.jp/pukiwiki/?OpenSim/osprofile
+  - for devel: https://polaris.star-dust.jp/pukiwiki/?OpenSim/osprofile
 
 ## Search
 - OpenSimSearch
-  - https://polaris.star-dust.jp/pukiwiki/?OpenSim/ossearch
+  - for devel: https://polaris.star-dust.jp/pukiwiki/?OpenSim/ossearch
 
 ## Wind
 - SFS_Wind
