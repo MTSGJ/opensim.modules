@@ -2,7 +2,7 @@
 
 
 ## Messaging
-- MuteList
+- MuteList (NSLMuteListModule)
 
 ## Migration
 - LocalMigration
