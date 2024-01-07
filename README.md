@@ -10,10 +10,10 @@
 ## Physics
 
 ## Profile
-- OpenSimProfile
+- OpenSimProfile (OpenProfile)
   
 ## Search
-- OpenSimSearch
+- OpenSimSearch (OpenSearch)
 
 ## Wind
 - SFS_Wind
