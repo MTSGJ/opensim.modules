@@ -3,7 +3,7 @@
 DLL=Messaging.NSLMuteList.dll
 
 VER=""
-DOTNETVER=9.0
+DOTNETVER=8.0
 
 if [ "$1" != "" ]; then
     VER="_"$1

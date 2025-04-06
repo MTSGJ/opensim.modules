@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VER=0.9.3
-DOTNETVER=9.0
+DOTNETVER=8.0 
 
 #
 if [ "$1" != "" ]; then

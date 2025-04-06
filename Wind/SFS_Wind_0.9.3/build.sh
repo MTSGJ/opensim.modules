@@ -2,7 +2,7 @@
 #
 
 MTLSTDLL=SimpleFluidSolverWind.dll
-DOTNETVER=9.0
+DOTNETVER=8.0
 
 if [ "$1" != "" ]; then
     DOTNETVER=$1
