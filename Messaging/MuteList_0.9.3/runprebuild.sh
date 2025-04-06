@@ -1,8 +1,12 @@
 #!/bin/sh
+#
+DOTNETVER=9.0
 
-#!/bin/sh
+if [ "$1" != "" ]; then
+    DOTNETVER=$1
+fi
+VER=`echo $DOTNETVER | sed -e "s/\./_/"`
 
-echo y | dotnet ../../../bin/prebuild.dll /file prebuild.xml /clean
-
-dotnet ../../../bin/prebuild.dll /target vs2022 /targetframework net6_0 /excludedir = "obj | bin" /file prebuild.xml
+echo y | dotnet ../../../bin/prebuild.dll /file prebuild.net.xml /clean
+dotnet ../../../bin/prebuild.dll /target vs2022 /targetframework net${VER} /excludedir = "obj | bin" /file prebuild.xml
 

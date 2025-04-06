@@ -1,8 +1,7 @@
 #!/bin/sh
 
-#VER=""
 VER=0.9.3
-
+DOTNETVER=9.0
 
 #
 if [ "$1" != "" ]; then
@@ -13,42 +12,40 @@ if [ "$VER" != "" ]; then
 	DVER="_"$VER
 fi
 
-
 echo "=========================="
-echo "NSL_MODULES$DVER"
+echo "  NSL_MODULES$DVER"
 echo "=========================="
-
 
 ./clean.sh
 
 # Migration
 cd Migration
-./build.sh $VER || exit 1
+./build.sh $VER $DOTNETVER || exit 1
 cd ..
 
 # MuteList
 cd Messaging
-./build.sh $VER || exit 1
+./build.sh $VER $DOTNETVER || exit 1
 cd ..
 
 # OS Profile
 cd Profile
-./build.sh $VER || exit 1
+./build.sh $VER $DOTNETVER || exit 1
 cd ..
 
 # OS Search
 cd Search
-./build.sh $VER || exit 1
+./build.sh $VER $DOTNETVER || exit 1
 cd ..
 
 # Physics
 cd Physics
-#./build.sh $VER || exit 1
+#./build.sh $VER $DOTNETVER || exit 1
 cd ..
 
 # Wind
 cd Wind
-./build.sh $VER || exit 1
+./build.sh $VER $DOTNETVER || exit 1
 cd ..
 
 #
