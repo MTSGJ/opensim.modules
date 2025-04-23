@@ -9,12 +9,15 @@ if [ "$1" != "" ]; then
 fi
 DVER=""
 if [ "$VER" != "" ]; then
-	DVER="_"$VER
+    DVER="_"$VER
+fi
+if [ "$2" != "" ]; then
+    DOTNETVER=$2
 fi
 
-echo "=========================="
-echo "  NSL_MODULES$DVER"
-echo "=========================="
+echo "==================================="
+echo "  NSL_MODULES$DVER for .net $DOTNETVER"
+echo "==================================="
 
 ./clean.sh
 

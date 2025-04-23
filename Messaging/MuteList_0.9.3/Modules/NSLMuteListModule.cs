@@ -220,15 +220,16 @@ namespace OpenSim.Modules.Messaging
 		{
 			//m_log.DebugFormat("[NSL MUTELIST] Got MUTELIST request for crc {0}", crc);
 
-			int cnt = 0;
 			string str = "";
 			string url = m_RestURL + "/RequestList/";
 
 			List<GridMuteList> mllist = SynchronousRestObjectRequester.MakeRequest<UUID, List<GridMuteList>>("POST", url, client.AgentId);
-			while (mllist==null && cnt<10) {		// retry
-				mllist = SynchronousRestObjectRequester.MakeRequest<UUID, List<GridMuteList>>("POST", url, client.AgentId);
-				cnt++;
-			}
+
+			//int cnt = 0;
+			//while (mllist==null && cnt<10) {		// retry
+			//	mllist = SynchronousRestObjectRequester.MakeRequest<UUID, List<GridMuteList>>("POST", url, client.AgentId);
+			//	cnt++;
+			//}
 
 			if (mllist!=null) {
 				foreach (GridMuteList ml in mllist)
