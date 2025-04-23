@@ -31,4 +31,7 @@ else
     cp -f ../bin/$DLL ../../bin || exit 1
 fi
 
+cd ..
+cp -f AForge.NET/AForge.Math.dll ../../bin
+
 echo
