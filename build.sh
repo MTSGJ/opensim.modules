@@ -16,7 +16,7 @@ if [ "$2" != "" ]; then
 fi
 
 echo "==================================="
-echo "  NSL_MODULES$DVER for .net $DOTNETVER"
+echo "  NSL_MODULES$DVER for .NET $DOTNETVER"
 echo "==================================="
 
 ./clean.sh
